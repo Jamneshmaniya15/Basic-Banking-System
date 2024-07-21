@@ -1,0 +1,89 @@
+/* Base styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+h2{
+    font-size: 40px;
+    color: #4a4a4a;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Table styles */
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    letter-spacing: 1.2px;
+}
+
+th, td{
+    padding: 15px;
+    text-align: center;
+    border: 1px solid rgba(221, 221, 221, 0.3);
+}
+
+th {
+    background: rgba(247, 247, 247, 0.8);
+}
+
+tr:nth-child(even) {
+    background: rgba(249, 249, 249, 0.8);
+}
+
+/* Button styles */
+button{
+    padding: 10px 20px;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: #1c5d8b;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px){
+    body {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    *{
+        letter-spacing: 1px;
+    }
+}

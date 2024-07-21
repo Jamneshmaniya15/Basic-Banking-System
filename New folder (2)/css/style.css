@@ -1,0 +1,110 @@
+/* Base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Introduction section styles */
+.intro {
+    background: url('https://www.imf.org/-/media/Images/IMF/About/Factsheets/2022/banner-quiz.ashx?h=700&w=2656&la=en') no-repeat center center/cover;
+    width: 100%;
+    height: 315px; /* Reduced height by 10% */
+    border-radius: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Text styling within .intro */
+h1, h3 {
+    margin: 0;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: 2.5rem; /* Adjust size as needed */
+}
+
+h3 {
+    font-size: 1.2rem; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background: rgba(123, 135, 136, 0.9);
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+button:hover, h1:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: rgba(76, 75, 75, 0.9);
+}
+
+/* Footer styles */
+footer {
+    color: #586776;
+    background: rgba(234, 240, 241, 0.9);
+    letter-spacing: 0.5px;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .intro {
+        height: auto; /* Allow height to adjust on smaller screens */
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2rem; /* Adjust size as needed */
+    }
+    h3 {
+        font-size: 1rem; /* Adjust size as needed */
+    }
+    footer {
+        padding: 15px;
+        margin: 10px;
+    }
+}
